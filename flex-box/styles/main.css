@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+.wrap {
+    margin-bottom: 30px;
+    padding: 10px 10px 30px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.wrap::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+.n-box {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 5px solid #b9e2eb;
+    background-color: #f8b836;
+}
+
+.d-box {
+    width: 130px;
+    height: 130px;
+    padding: 10px;
+    border: 5px solid #b9e2eb;
+    background-color: #f8b836;
+    box-sizing: border-box;
+}
+
+.content-box {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #32be38;
+    font-size: 12px;
+    color: #fff;
+}
+
+
+/* 分栏 */
+.column-box {
+    width: 700px;
+    -webkit-column-count: 3;
+    -webkit-column-rule-style: dotted;
+}
+
+.column-box p {
+    color: #333;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+
+
+/* 旧版盒模型 */
+.webkit-box {
+    display: -webkit-box;
+    background: #000;
+    width: 700px;
+}
+
+.webkit-box .one {
+    height: 100px;
+    -webkit-box-flex: 1;
+    background-color: red;
+}
+
+.webkit-box .two {
+    height: 100px;
+    -webkit-box-flex: 1;
+    background-color: blue;
+}
+
+.webkit-box .three {
+    height: 100px;
+    -webkit-box-flex: 1;
+    background-color: gray;
+}
+
+
+
+/* 新版盒模型 -- 水平*/
+
+.flex-box {
+    display: -webkit-flex;
+    width: 700px;
+}
+
+.flex-box .one {
+    height: 100px;
+    -webkit-flex: 1;
+    background-color: red;
+}
+
+.flex-box .two {
+    height: 100px;
+    -webkit-flex: 1;
+    background-color: blue;
+}
+
+.flex-box .three {
+    height: 100px;
+    -webkit-flex: 1;
+    background-color: gray;
+}
+
+
+
+
+/* 新版盒模型 --垂直*/
+
+.flex-box-vertical {
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    width: 700px;
+}
+
+.flex-box-vertical .one {
+    height: 100px;
+    -webkit-flex: 1;
+    background-color: red;
+}
+
+.flex-box-vertical .two {
+    height: 100px;
+    -webkit-flex: 1;
+    background-color: blue;
+}
+
+.flex-box-vertical .three {
+    height: 100px;
+    -webkit-flex: 1;
+    background-color: gray;
+}
