@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register_1</title>
+
+    <link type="text/css" rel="stylesheet" href="styles/main.css"/>
+</head>
+<body>
+
+<div class="wrapper">
+
+    <div class="header">
+        <div class="logo">
+            <a href="javascript:;">
+                <img src="images/qdjjlogo.gif" alt="">
+            </a>
+        </div>
+        <div class="right-box">
+            <a href="javascript:;">注册</a>
+            <a href="javascript:;">登录</a>
+            <a href="javascript:;">收藏本站</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="title">
+            新教员注册第一步选择用户名、密码和身份
+        </div>
+
+        <div class="tips">注意：带 <span class="color-red">* </span>为必填项</div>
+
+        <form name="register_1" action="#" method="post">
+            <table cellspacing="0" border="0" class="reg-table">
+                <tbody>
+                <tr>
+                    <td colspan="3" class="t-title">登录名和密码</td>
+                </tr>
+                <tr>
+                    <td width="16%" align="right"><span class="color-red">*</span>会员名：</td>
+                    <td width="30%"><input type="text"></td>
+                    <td><span class="color-red">3-12个字符</span>，会员名须以字母开头，只能由英文字母、数字、下划线组成，中间不能有空格。</td>
+                </tr>
+                <tr>
+                    <td align="right"><span class="color-red">*</span>密码：</td>
+                    <td><input type="password"></td>
+                    <td><span class="color-red">6-20个字符</span>，区分英文字母大小写。</td>
+                </tr>
+                <tr>
+                    <td align="right"><span class="color-red">*</span>确认密码：</td>
+                    <td><input type="password"></td>
+                    <td>确认密码要与密码完全一致，注意英文字母大小写。</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="t-title">选择教员身份</td>
+                </tr>
+                <tr>
+                    <td align="right"><span class="color-red">*</span>教员身份：</td>
+                    <td colspan="2">
+                        <div class="select-type">
+                            <input type="radio" id="01" name="type">
+                            <label for="01">在校大学生(研究生) ,不含留学生 </label>
+                        </div>
+                        <div class="select-type">
+                            <input type="radio" id="02" name="type">
+                            <label for="02">专职教师(在职/进修/离职/退休) </label>
+                        </div>
+                        <div class="select-type">
+                            <input type="radio" id="03" name="type">
+                            <label for="03">外籍人士(含留学生、外教)，海外归国人员</label>
+                        </div>
+                        <div class="select-type">
+                            <input type="radio" id="04" name="type">
+                            <label for="04">社会职业人士(已经毕业离校的非教师职业人员)</label>
+                        </div>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="3" align="center" height="60">
+                        <input type="submit" value="提交">
+                        <input type="reset" value="重置">
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+
+    </div>
+
+    <div class="footer">
+        Copyright © 2003～2008 版权所有 青岛家教网
+    </div>
+
+</div>
+
+</body>
+</html>
